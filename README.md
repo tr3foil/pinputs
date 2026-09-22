@@ -8,10 +8,7 @@ Pin your NixOS flake inputs to the system flake registry!
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    pinputs = {
-      url = "github:tr3foil/pinputs/main";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    pinputs.url = "github:tr3foil/pinputs/main";
   };
 
   outputs = inputs@{ self, nixpkgs, pinputs }: {
