@@ -2,7 +2,7 @@
 
 description = "Pin your NixOS flake inputs to the system flake registry";
 
-outputs = { self }: {
+outputs = _: {
   nixosModules.default = import ./module.nix;
 };
 
